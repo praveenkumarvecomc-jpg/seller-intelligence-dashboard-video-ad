@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Seller Intelligence Ad</title>
+<link rel="stylesheet" href="./fonts3.css">
+<style>
+:root{
+  --bg:#13161B; --bg2:#1A1E25; --card:#1C2027; --card2:#20252D; --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.12);
+  --tx:#F3F4F6; --mu:#9BA2AE; --mu2:#6F7682;
+  --or:#F7931E; --or2:#FFB04A; --gr:#3CCB7F; --rd:#F0645A; --pu:#9384F5; --bl:#4C8DF6; --am:#F2B33D;
+  --H:"Jakarta","Inter",sans-serif; --T:"Inter",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);overflow:hidden}
+#wrap{position:relative;width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:var(--T);color:var(--tx);font-variant-numeric:tabular-nums}
+.abs{position:absolute}
+#bgc{position:absolute;inset:0}
+.layer{position:absolute;inset:0}
+.card{position:absolute;background:linear-gradient(180deg,#1F242C 0%,#1A1E25 100%);border:1px solid var(--line);border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.45),0 2px 0 rgba(255,255,255,.03) inset}
+.ttl{font-family:var(--H);font-weight:700;font-size:22px;color:var(--tx);letter-spacing:-.01em}
+.sub{font-size:15px;color:var(--mu)}
+.lbl{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mu)}
+.num{font-family:var(--H);font-weight:800;letter-spacing:-.02em}
+.pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:6px 14px;font-size:14px;font-weight:600}
+.mask{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.mask>span{display:inline-block;will-change:transform}
+.ico{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex:none}
+.track{position:relative;height:10px;border-radius:6px;background:rgba(255,255,255,.07);overflow:hidden}
+.fill{position:absolute;left:0;top:0;bottom:0;border-radius:6px}
+.row{display:flex;align-items:center}
+svg{overflow:visible}
+</style>
+<script type="importmap">{ "imports": {} }</script>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="bgc" width="1920" height="1080"></canvas>
+  <div id="world" class="layer"></div>
+  <div id="fixed" class="layer"></div>
+</div>
+<script type="module" src="./scene3.js"></script>
+</body>
+</html>

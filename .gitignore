@@ -21,3 +21,9 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# video build artefacts
+node_modules/
+frames/
+*.wav
+__pycache__/
